@@ -7,14 +7,15 @@ export async function getAlbumsWithVersions() {
     .select(
       `
       id,
+      artist,
       title,
-      era,
-      release_year,
-      cover_url,
-      album_versions ( id, name, format, country, year, cover_url )
+      type,
+      region,
+      release_date,
+      album_versions ( id, name, format_description )
     `
     )
-    .order("release_year", { ascending: false });
+    .order("release_date", { ascending: false });
 
   if (error) throw error;
 

@@ -12,10 +12,14 @@ dist
 dist-ssr
 *.local
 
-# .gitignore
+# Variables de entorno / secretos
+.env
 .env.local
 .env*.local
 .env.script
+
+# Vercel CLI (vercel link / vercel env pull)
+.vercel
 
 # Editor directories and files
 .vscode/*
