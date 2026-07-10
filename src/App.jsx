@@ -461,7 +461,7 @@ export default function App() {
 
         .topbar {
           position: relative;
-          z-index: 1;
+          z-index: 10;
           max-width: 920px;
           margin: 0 auto 1.5rem;
           display: flex;
@@ -536,7 +536,7 @@ export default function App() {
         }
 
         .user-dropdown-email {
-          font-size: 0.85rem;
+          font-size: 0.72rem;
           color: var(--text);
           word-break: break-all;
         }
